@@ -149,3 +149,18 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# ssh aliases
+alias unsw='ssh z3319805@matht327.maths.unsw.edu.au'
+alias unsw2='ssh z3319805@matht333.maths.unsw.edu.au'
+alias unswv='ssh -XY z3319805@matht327.maths.unsw.edu.au'
+alias unswv2='ssh -XY z3319805@matht333.maths.unsw.edu.au'
+alias katana='ssh z3319805@katana.science.unsw.edu.au'
+alias katanav='ssh -XY z3319805@katana.science.unsw.edu.au'
+alias katanav2='ssh -X z3319805@katana.science.unsw.edu.au'
+alias gp1='ssh pasquieb@gplogin1.ps.uci.edu'
+alias gp2='ssh pasquieb@gplogin2.ps.uci.edu'
+alias gp3='ssh pasquieb@gplogin3.ps.uci.edu'
+alias gp1v='ssh -X pasquieb@gplogin1.ps.uci.edu'
+alias gp2v='ssh -X pasquieb@gplogin2.ps.uci.edu'
+alias gp3v='ssh -X pasquieb@gplogin3.ps.uci.edu'
