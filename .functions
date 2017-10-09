@@ -198,51 +198,32 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
-
 # scp functions
-function cp2unsw()
-{
-scp $1 z3319805@matht327.maths.unsw.edu.au:/home/nfs/z3319805/$2
-}
-function cp2unswMATLAB()
-{
-scp $1 z3319805@matht327.maths.unsw.edu.au:/home/nfs/z3319805/Documents/MATLAB/MATLABRepo/
-}
-function cp2unswMATLAB2()
-{
-scp -r $1 z3319805@matht327.maths.unsw.edu.au:/home/nfs/z3319805/Documents/MATLAB/MATLABRepo/$2
-}
-function cp2unsw2()
-{
-scp -r $1 z3319805@matht333.maths.unsw.edu.au:/home/nfs/z3319805/Documents/$2
-}
-function cp2katana()
+function cp2katana() # Copy to katana using kdm (katana data manager)
 {
 scp -r $1 z3319805@kdm.science.unsw.edu.au:/home/z3319805/$2
 }
-function cp2gp1()
+function cp2gp1() # Copy to greenplanet (via gplogin1)
 {
 scp -r $1 pasquieb@gplogin1.ps.uci.edu:$2
 }
-
-function cpfromunsw()
+function cp2gp3() # Copy to greenplanet (via gplogin3)
 {
-scp z3319805@matht327.maths.unsw.edu.au:/home/nfs/z3319805/$1 $2
+scp -r $1 pasquieb@gplogin3.ps.uci.edu:$2
 }
-function cpfromunsw2()
-{
-scp z3319805@matht333.maths.unsw.edu.au:/home/nfs/z3319805/Documents/$1 $2
-}
-function cpfromunswMATLAB()
-{
-scp z3319805@matht327.maths.unsw.edu.au:/home/nfs/z3319805/Documents/MATLAB/MATLABRepo/$1 ./
-}
-function cpfromkatana()
+function cpfromkatana() # Copy from katana using kdm (katana data manager)
 {
 scp z3319805@kdm.science.unsw.edu.au:/home/z3319805/$1 $2
 }
-function cpSampleNotesfromGreenPlanet()
+function cpSampleNotesfromGreenPlanet() # Copy sampleNOTES from Moore's greenplanet
 {
 scp 'pasquieb@gplogin1.ps.uci.edu:/gdata/mooreprimeau/CESM_CODE/CESM1.97/sampleNOTES/*' $1
 }
-
+function cpfromgp1() # Copy from greenplanet (via gplogin3)
+{
+scp pasquieb@gplogin1.ps.uci.edu:$1 $2
+}
+function cpfromgp3() # Copy from greenplanet (via gplogin3)
+{
+scp pasquieb@gplogin3.ps.uci.edu:$1 $2
+}
