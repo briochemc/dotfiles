@@ -5,5 +5,5 @@ colorscheme solarized
 set guifont=Monaco:h14
 " Don’t blink cursor in normal mode
 set guicursor=n:blinkon0
-" Better line-height
-set linespace=8
+"" Better line-height
+"set linespace=8

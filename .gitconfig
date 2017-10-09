@@ -135,7 +135,8 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	# BP: Removed until I know how to use it
+	# gpgsign = true
 
 [diff]
 
