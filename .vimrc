@@ -104,3 +104,6 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" map ; to : to avoid pressing shift when, e.g., saving file
+:nmap ; :
