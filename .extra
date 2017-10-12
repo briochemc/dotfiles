@@ -1,0 +1,9 @@
+# Git credentials
+# Careful: in my own repository (Benoit Pasquier), so people may be committing under my name
+# if they decide to use my setup (Don't!)
+GIT_AUTHOR_NAME="Benoit Pasquier"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="pasquieb@uci.edu"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
