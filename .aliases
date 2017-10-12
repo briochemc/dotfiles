@@ -166,8 +166,7 @@ alias gp2v='ssh -X pasquieb@gplogin2.ps.uci.edu'
 alias gp3v='ssh -X pasquieb@gplogin3.ps.uci.edu'
 
 # quick matlab launch aliases
-alias matlab='matlab -nosplash'
-alias matlabcl='matlab -nodesktop'
+alias matlabcl='matlab -nodesktop -nosplash'
 
 # quick navigation command line aliases
 alias cdmatlab='cd ~/Documents/PhD/myPHD/MATLAB/'
