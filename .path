@@ -1,3 +1,3 @@
 # Adds my student version of MATLAB in the path
 # for it to open when I simply type "matlab" in command line
-export PATH="/Applications/MATLAB_R2012a_Student.app/bin:$PATH"
+export PATH="/Applications/MATLAB_R2017b.app/bin:$PATH"
