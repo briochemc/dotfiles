@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 
 # Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
+alias .. = "cd .."
+alias ... = "cd ../.."
+alias .... = "cd ../../.."
+alias ..... = "cd ../../../.."
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
+alias cdgoogle = "cd ~/Google\ Drive"
+alias cddown = "cd ~/Downloads"
+alias cddesk = "cd ~/Desktop"
+alias cdproj = "cd ~/Projects"
+alias g = "git"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
