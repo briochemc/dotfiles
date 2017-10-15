@@ -173,3 +173,6 @@ alias cduci='cd ~/Documents/postdoc_UCI/'
 alias cdlatex='cd ~/Documents/PhD/myPHD/LATEX/'
 alias cdpapers='cd ~/Documents/Papers/'
 alias cdpostdoc='cd ~/Documents/postdoc_UCI/'
+
+# top to see 10 most CPU intensive processes
+alias top='top -o cpu -n 10'
