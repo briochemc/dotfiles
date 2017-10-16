@@ -1,3 +1,13 @@
 # Automatically normalize line endings for all text-based files
 #* text=auto
 # Disabled because of https://github.com/mathiasbynens/dotfiles/issues/149 :(
+
+# Do not modify data files
+*.mat -crlf -diff -merge
+*.nc -crlf -diff -merge
+# Do not modify figure files
+*.fig -crlf -diff -merge
+*.pdf -crlf -diff -merge
+*.eps -crlf -diff -merge
+*.jpg -crlf -diff -merge
+*.png -crlf -diff -merge
