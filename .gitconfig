@@ -79,6 +79,9 @@
 		fi \
 	}; f"
 
+	# Update origine and pull
+	up = !git remotue update && git pull
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
