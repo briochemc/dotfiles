@@ -10,6 +10,7 @@ alias -- -="cd -" # Go back (type just one '-')
 # Shortcuts
 alias cdgoogle="cd ~/Google\ Drive"
 alias cddown="cd ~/Downloads"
+alias cddoc="cd ~/Documents"
 alias cddesk="cd ~/Desktop"
 alias cdproj="cd ~/Projects"
 alias g="git"
