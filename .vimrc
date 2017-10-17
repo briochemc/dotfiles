@@ -21,6 +21,9 @@ set gdefault
 set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
+" Same for local mapleader 
+" (the one to use with plugins that apply to specific file types)
+let maplocalleader=","
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
