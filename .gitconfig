@@ -80,7 +80,7 @@
 	}; f"
 
 	# Update origine and pull
-	up = !git remotue update && git pull
+	up = !git remote update && git pull
 
 [apply]
 
