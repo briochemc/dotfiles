@@ -13,6 +13,11 @@ alias cddown="cd ~/Downloads"
 alias cddoc="cd ~/Documents"
 alias cddesk="cd ~/Desktop"
 alias cdproj="cd ~/Projects"
+alias cdmatlab="cd ~/Documents/PhD/myPHD/MATLAB/"
+alias cduci="cd ~/Documents/postdoc_UCI/"
+alias cdlatex="cd ~/Documents/PhD/myPHD/LATEX/"
+alias cdpapers="cd ~/Documents/Papers/"
+alias cdpostdoc="cd ~/Documents/postdoc_UCI/"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -167,13 +172,6 @@ alias gp3v='ssh -X pasquieb@gplogin3.ps.uci.edu'
 
 # quick matlab launch aliases
 alias matlabcl='matlab -nodesktop -nosplash'
-
-# quick navigation command line aliases
-alias cdmatlab='cd ~/Documents/PhD/myPHD/MATLAB/'
-alias cduci='cd ~/Documents/postdoc_UCI/'
-alias cdlatex='cd ~/Documents/PhD/myPHD/LATEX/'
-alias cdpapers='cd ~/Documents/Papers/'
-alias cdpostdoc='cd ~/Documents/postdoc_UCI/'
 
 # top to see 10 most CPU intensive processes
 alias top='top -o cpu -n 10'
