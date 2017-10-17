@@ -93,5 +93,8 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# Added by BP
+brew install htop
+
 # Remove outdated versions from the cellar.
 brew cleanup
