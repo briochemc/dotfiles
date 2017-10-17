@@ -122,5 +122,39 @@ call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 call plug#end()
 
-" set file type when .tex  extension is detected
-let g:tex_flavor = 'latex'
+" vimtex setup for skim according to https://github.com/lervag/vimtex/issues/523
+" (Removed lines that were redundant)
+filetype plugin indent on
+
+" Settings
+set grepprg=grep\ -nH\ $*
+set sw=2
+set iskeyword+=:
+let g:tex_flavor='latex'
+let g:tex_fold_enabled=1
+let g:tex_nospell=1
+let g:tex_no_error=1
+
+let g:vimtex_view_general_viewer
+      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
+let g:vimtex_latexmk_callback_hooks = ['UpdateSkim']
+
+function! UpdateSkim(status)
+  if !a:status | return | endif
+
+  let l:out = b:vimtex.out()
+  let l:tex = expand('%:p')
+  let l:cmd = [g:vimtex_view_general_viewer, '-r']
+  if !empty(system('pgrep Skim'))
+    call extend(l:cmd, ['-g'])
+  endif
+  if has('nvim')
+    call jobstart(l:cmd + [line('.'), l:out, l:tex])
+  elseif has('job')
+    call job_start(l:cmd + [line('.'), l:out, l:tex])
+  else
+    call system(join(l:cmd + [line('.'),
+          \ shellescape(l:out), shellescape(l:tex)], ' '))
+  endif
+endfunction
