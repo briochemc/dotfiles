@@ -95,6 +95,7 @@ brew install zopfli
 
 # Added by BP
 brew install htop
+brew install ghostscript
 
 # Remove outdated versions from the cellar.
 brew cleanup
