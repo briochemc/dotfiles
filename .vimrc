@@ -108,13 +108,13 @@ endif
 " map ; to : to avoid pressing shift when, e.g., saving file
 :nmap ; :
 
-# Automatic installation of vim-plug
+" Automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-# And plugins called
+" And plugins called
 call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 call plug#end()
