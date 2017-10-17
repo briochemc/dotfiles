@@ -118,3 +118,6 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 call plug#end()
+
+" set file type when .tex  extension is detected
+let g:tex_flavor = 'latex'
