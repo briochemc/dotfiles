@@ -158,3 +158,6 @@ function! UpdateSkim(status)
           \ shellescape(l:out), shellescape(l:tex)], ' '))
   endif
 endfunction
+
+" Activate forward searching
+map ,r :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-r>=line('.')<CR> %<.pdf<CR>
