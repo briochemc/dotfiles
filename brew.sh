@@ -96,6 +96,8 @@ brew install zopfli
 # Added by BP
 brew install htop
 brew install ghostscript
+brew tap caskroom/cask
+brew cask install gimp
 
 # Remove outdated versions from the cellar.
 brew cleanup
