@@ -160,3 +160,6 @@ if has("gui_macvim")
   " Command-0 goes to the last tab
   noremap <D-0> :tablast<CR>
 endif
+
+" save on focus lost
+:au FocusLost * :wa
