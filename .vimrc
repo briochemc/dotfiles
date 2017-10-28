@@ -49,8 +49,8 @@ set number
 syntax on
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
+" Make tabs as wide as two spaces and replace them with spaces
+set tabstop=2 expandtab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -120,6 +120,7 @@ endif
 " And plugins called
 call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
+Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()
 
 " vimtex setup for skim according to https://github.com/lervag/vimtex/issues/523
