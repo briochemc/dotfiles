@@ -127,6 +127,9 @@ call plug#end()
 " (Removed lines that were redundant)
 filetype plugin indent on
 
+" vim-markdown-preview github-flavor
+let vim_markdown_preview_github=1
+
 " Settings
 set grepprg=grep\ -nH\ $*
 set sw=2
