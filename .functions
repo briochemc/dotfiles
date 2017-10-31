@@ -211,6 +211,10 @@ function cp2gp3() # Copy to greenplanet (via gplogin3)
 {
 scp -r $1 pasquieb@gplogin3.ps.uci.edu:$2
 }
+function cp2imac() # Copy to iMac
+{
+scp -r $1 UCIben@128.200.14.118:/Users/UCIben/$2
+}
 function cpfromkatana() # Copy from katana using kdm (katana data manager)
 {
 scp z3319805@kdm.science.unsw.edu.au:/home/z3319805/$1 $2
@@ -226,4 +230,8 @@ scp pasquieb@gplogin1.ps.uci.edu:$1 $2
 function cpfromgp3() # Copy from greenplanet (via gplogin3)
 {
 scp pasquieb@gplogin3.ps.uci.edu:$1 $2
+}
+function cpfromimac() # Copy to iMac
+{
+scp UCIben@128.200.14.118:$1 $2
 }
