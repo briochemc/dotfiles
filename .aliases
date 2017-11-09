@@ -18,7 +18,7 @@ alias cdlatex="cd ~/Documents/PhD/myPHD/LATEX/"
 alias cdpapers="cd ~/Documents/Papers/"
 alias cdpostdoc="cd ~/Documents/postdoc_UCI/"
 alias g="git"
-if [ $HOSTNAME = "gplogin3.local" ]; then
+if [ ${HOSTNAME:0:7} = "gplogin" ]; then
   alias cdproj="cd /lustre/SCRATCH/moore/pasquieb/projects"
 else
   alias cdproj="cd ~/Projects"
