@@ -12,7 +12,6 @@ alias cdgoogle="cd ~/Google\ Drive"
 alias cddown="cd ~/Downloads"
 alias cddoc="cd ~/Documents"
 alias cddesk="cd ~/Desktop"
-alias cdproj="cd ~/Projects"
 alias cdmatlab="cd ~/Documents/PhD/myPHD/MATLAB/"
 alias cduci="cd ~/Documents/postdoc_UCI/"
 alias cdlatex="cd ~/Documents/PhD/myPHD/LATEX/"
@@ -21,6 +20,8 @@ alias cdpostdoc="cd ~/Documents/postdoc_UCI/"
 alias g="git"
 if [ $HOSTNAME = "gplogin3.local" ]; then
   alias cdprooj="cd /lustre/SCRATCH/moore/pasquieb/projects"
+else
+  alias cdproj="cd ~/Projects"
 fi
 
 # Detect which `ls` flavor is in use
