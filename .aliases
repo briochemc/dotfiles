@@ -19,6 +19,9 @@ alias cdlatex="cd ~/Documents/PhD/myPHD/LATEX/"
 alias cdpapers="cd ~/Documents/Papers/"
 alias cdpostdoc="cd ~/Documents/postdoc_UCI/"
 alias g="git"
+if [ $HOSTNAME = "gplogin3.local" ]; then
+  alias cdprooj="cd /lustre/SCRATCH/moore/pasquieb/projects"
+fi
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
