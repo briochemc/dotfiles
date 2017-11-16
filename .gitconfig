@@ -86,7 +86,10 @@
 	up = !git remote update && git pull
 
 	# merge with no fast forward
-	m = !git merge --no-ff
+	m = "!f() { git merge --no-ff $1 ; }; f"
+
+	# when finished on a branch
+	done = "!f() { git merge --no-ff master && git checkout master && git merge $1 && git push ; }; f"
 
 [apply]
 
