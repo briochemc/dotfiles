@@ -49,7 +49,9 @@ prompt_git() {
     # Get the short symbolic ref.
     # If HEAD isn’t a symbolic ref, get the short SHA for the latest commit
     # Otherwise, just give up.
+    # BP added the 2nd line to work with older git versions (e.g., katana and gp)
     branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
+      git rev-parse --abbrev-ref --short HEAD 2> /dev/null || \
       git rev-parse --short HEAD 2> /dev/null || \
       echo '(unknown)')";
 
