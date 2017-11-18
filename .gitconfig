@@ -91,6 +91,13 @@
 	# when finished on a branch
 	done = "!f() { git checkout $1 && git merge master && git checkout master && git merge --no-ff $1 && git push ; }; f"
 
+  # track same branch name on origin
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	track = "!git branch -u origin/$(git branch-name)"
+
+	# show each branch tracking
+	tracks = "!git for-each-ref --format='%(refname:short) <- %(upstream:short)' refs/heads"
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
