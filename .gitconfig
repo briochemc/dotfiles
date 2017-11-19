@@ -91,7 +91,7 @@
 	# when finished on a branch
 	done = "!f() { git checkout $1 && git merge master && git checkout master && git merge --no-ff $1 && git push ; }; f"
 
-  # track same branch name on origin
+	# track same branch name on origin
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	track = "!git branch -u origin/$(git branch-name)"
 
