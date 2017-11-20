@@ -46,3 +46,12 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# git completion for greenplanet
+if [ -f /etc/bash_completion.d/git ]; then
+  source /etc/bash_completion.d/git
+fi
+# Enable tab completion for `g` by marking it as an alias for `git` for greenplanet
+if type _git &> /dev/null && [ -f /etc/bash_completion.d/git ]; then
+	complete -o default -o nospace -F _git g;
+fi;
