@@ -140,7 +140,7 @@
 
 [color "diff"]
 
-	meta = yellow bold
+	meta = white bold
 	frag = magenta bold # line info
 	old = red # deletions
 	new = green # additions
