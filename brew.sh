@@ -98,6 +98,7 @@ brew install htop
 brew install ghostscript
 brew tap caskroom/cask
 brew cask install gimp
+brew install unix2dos
 
 # Remove outdated versions from the cellar.
 brew cleanup
