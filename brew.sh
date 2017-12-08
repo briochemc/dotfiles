@@ -99,6 +99,8 @@ brew install ghostscript
 brew tap caskroom/cask
 brew cask install gimp
 brew install unix2dos
+brew install grip
+brew cask install flux
 
 # Remove outdated versions from the cellar.
 brew cleanup
