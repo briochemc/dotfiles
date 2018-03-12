@@ -101,6 +101,7 @@ brew cask install gimp
 brew install unix2dos
 brew install grip
 brew cask install flux
+brew cask install anaconda
 
 # Remove outdated versions from the cellar.
 brew cleanup
