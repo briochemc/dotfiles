@@ -1,3 +1,9 @@
 # Adds my student version of MATLAB in the path
 # for it to open when I simply type "matlab" in command line
 export PATH="/Applications/MATLAB_R2017b.app/bin:$PATH"
+
+# Add anaconda to the path
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
+# For a2x, needed for git-latexdiff?
+export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
