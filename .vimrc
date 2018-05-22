@@ -122,6 +122,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'maverickg/stan'
+Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 " vimtex setup for skim according to https://github.com/lervag/vimtex/issues/523
