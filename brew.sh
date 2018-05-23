@@ -106,6 +106,5 @@ brew cask install anaconda
 # testing for Julia
 brew cask install atom
 
-
 # Remove outdated versions from the cellar.
 brew cleanup
