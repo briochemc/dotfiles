@@ -135,7 +135,8 @@ let vim_markdown_preview_github=1
 " Settings
 set grepprg=grep\ -nH\ $*
 set sw=2
-set iskeyword+=:
+"set iskeyword+=: removed because breaks syntax highlighting of ranges in
+"Julia such as 1:2
 let g:tex_flavor='latex'
 "let g:tex_fold_enabled=1 " Removed because very slow!!
 "let g:tex_nospell=1
