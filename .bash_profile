@@ -56,10 +56,5 @@ if type _git &> /dev/null && [ -f /etc/bash_completion.d/git ]; then
 	complete -o default -o nospace -F _git g;
 fi;
 
-# Additions for UCI campus-wide HPC:
-# Source global definitions
-#if [ -f /etc/bashrc ]; then
-#  source /etc/bashrc
-#fi
-#export MODULEPATH=""
+# Additions for UCI campus-wide HPC use of modules:
 source /data/shell-syswide-setup/system-wide-bashrc
