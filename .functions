@@ -235,3 +235,7 @@ function cpfromimac() # Copy to iMac
 {
   scp UCIben@128.200.14.118:$1 $2
 }
+function cp2ucihpc() # Copy to UCI HPC
+{
+  scp -r $1 hpc.oit.uci.edu:/data/users/pasquieb/$2
+}
