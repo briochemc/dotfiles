@@ -9,3 +9,10 @@ isfile("_init.jl") && include(joinpath(pwd(), "_init.jl"))
     sleep(0.1)
     @eval using Revise
 end
+
+# Use OhMyREPL
+if isdir(Pkg.dir("OhMyREPL"))
+    @eval using OhMyREPL
+else
+    warn("OhMyREPL not installed")
+end
