@@ -7,3 +7,6 @@ export PATH="/usr/local/anaconda3/bin:$PATH"
 
 # For a2x, needed for git-latexdiff?
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+
+# For tree in ~/bin/bin on greenplanet
+export PATH=$PATH:~/bin/bin
