@@ -207,6 +207,14 @@ function cp2gp1() # Copy to greenplanet (via gplogin1)
 {
   scp -r $1 pasquieb@gplogin1.ps.uci.edu:$2
 }
+function cp2gp2() # Copy to greenplanet (via gplogin2)
+{
+  scp -r $1 pasquieb@gplogin2.ps.uci.edu:$2
+}
+function cp2gp2_cesmruns() # Copy to greenplanet cesm_runs (via gplogin2)
+{
+  scp -r $1 pasquieb@gplogin2.ps.uci.edu:/DFS-L/SCRATCH/moore/pasquieb/cesm_runs/$2
+}
 function cp2gp3() # Copy to greenplanet (via gplogin3)
 {
   scp -r $1 pasquieb@gplogin3.ps.uci.edu:$2
