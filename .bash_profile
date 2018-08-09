@@ -50,4 +50,16 @@ if type _git &> /dev/null && [ -f /etc/bash_completion.d/git ]; then
 fi;
 
 # Additions for UCI campus-wide HPC use of modules:
-source /data/shell-syswide-setup/system-wide-bashrc
+if [ ${HOSTNAME} = "pc-login-1-3.local" ]; then
+  source /data/shell-syswide-setup/system-wide-bashrc
+fi;
+
+# Source global definitions for greenplanet
+if [ ${HOSTNAME:0:7} = "gplogin" ]; then
+  if [ -f /etc/bashrc ]; then
+    source /etc/bashrc
+  fi;
+fi;
+
+
+
