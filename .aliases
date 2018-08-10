@@ -97,5 +97,7 @@ alias matlabcl='matlab -nodesktop -nosplash'
 # top to see 10 most CPU intensive processes
 alias top='top -o cpu -n 10'
 
-# julia alias
-alias julia="/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia"
+# julia alias for Mac
+if [ -d /Applications/Julia-1.0.app/ ]; then
+  alias julia="/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia"
+fi
