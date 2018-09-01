@@ -35,7 +35,7 @@ function cp2imac() # Copy to iMac
 }
 function cpfromkatana() # Copy from katana using kdm (katana data manager)
 {
-  scp z3319805@kdm.science.unsw.edu.au:/home/z3319805/$1 $2
+  scp -r z3319805@kdm.science.unsw.edu.au:/home/z3319805/$1 $2
 }
 function cpSampleNotesfromGreenPlanet() # Copy sampleNOTES from Moore's greenplanet
 {
