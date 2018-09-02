@@ -171,3 +171,15 @@ endif
 
 " save on focus lost
 :au FocusLost * :wa
+
+" use -shell-escape for compiliing LaTeX (whatever that means)
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-pdf',
+    \   '-shell-escape',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
