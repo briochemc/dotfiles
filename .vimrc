@@ -49,10 +49,10 @@ set number
 syntax on
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces and replace them with spaces
-set tabstop=2 expandtab
+" Make tabs as wide as four spaces and replace with spaces
+set tabstop=4 noexpandtab
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:\ \ ,trail:·,eol:¬,nbsp:_
 set list
 " Highlight searches
 set hlsearch
@@ -113,9 +113,9 @@ endif
 
 " Automatic installation of vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+	\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 " And plugins called
 call plug#begin('~/.vim/plugged')
@@ -124,7 +124,12 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'maverickg/stan'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'mzlogin/vim-markdown-toc'
+Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
+
+" Enable indent guides by default (nathanaelkane/vim-indent-guides)
+let g:indent_guides_enable_on_vim_startup = 1
+set ts=4 sw=4 et
 
 " vimtex setup for skim according to https://github.com/lervag/vimtex/issues/523
 " (Removed lines that were redundant)
@@ -135,7 +140,6 @@ let vim_markdown_preview_github=1
 
 " Settings
 set grepprg=grep\ -nH\ $*
-set sw=2
 "set iskeyword+=: removed because breaks syntax highlighting of ranges in
 "Julia such as 1:2
 let g:tex_flavor='latex'
@@ -144,7 +148,7 @@ let g:tex_flavor='latex'
 let g:tex_no_error=1
 let g:vimtex_view_method = 'skim'
 let g:vimtex_view_general_viewer
-      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+	    \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
 let g:vimtex_latexmk_callback_hooks = ['UpdateSkim']
 
@@ -155,31 +159,34 @@ let g:tex_comment_nospell= 1
 map ,r :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-r>=line('.')<CR> %<.pdf<CR>
 
 if has("gui_macvim")
-  " Switch to specific tab numbers with Command-number
-  noremap <D-1> :tabn 1<CR>
-  noremap <D-2> :tabn 2<CR>
-  noremap <D-3> :tabn 3<CR>
-  noremap <D-4> :tabn 4<CR>
-  noremap <D-5> :tabn 5<CR>
-  noremap <D-6> :tabn 6<CR>
-  noremap <D-7> :tabn 7<CR>
-  noremap <D-8> :tabn 8<CR>
-  noremap <D-9> :tabn 9<CR>
-  " Command-0 goes to the last tab
-  noremap <D-0> :tablast<CR>
+	" Switch to specific tab numbers with Command-number
+	noremap <D-1> :tabn 1<CR>
+	noremap <D-2> :tabn 2<CR>
+	noremap <D-3> :tabn 3<CR>
+	noremap <D-4> :tabn 4<CR>
+	noremap <D-5> :tabn 5<CR>
+	noremap <D-6> :tabn 6<CR>
+	noremap <D-7> :tabn 7<CR>
+	noremap <D-8> :tabn 8<CR>
+	noremap <D-9> :tabn 9<CR>
+	" Command-0 goes to the last tab
+	noremap <D-0> :tablast<CR>
 endif
 
 " save on focus lost
 :au FocusLost * :wa
 
+" Trying to get the breaks to be indented as they started
+:set breakindent
+
 " use -shell-escape for compiliing LaTeX (whatever that means)
 let g:vimtex_compiler_latexmk = {
-    \ 'options' : [
-    \   '-pdf',
-    \   '-shell-escape',
-    \   '-verbose',
-    \   '-file-line-error',
-    \   '-synctex=1',
-    \   '-interaction=nonstopmode',
-    \ ],
-    \}
+	  \ 'options' : [
+	  \   '-pdf',
+	  \   '-shell-escape',
+	  \   '-verbose',
+	  \   '-file-line-error',
+	  \   '-synctex=1',
+	  \   '-interaction=nonstopmode',
+	  \ ],
+	  \}
