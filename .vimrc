@@ -190,3 +190,7 @@ let g:vimtex_compiler_latexmk = {
 	  \   '-interaction=nonstopmode',
 	  \ ],
 	  \}
+
+" Use 2 space tabs for yaml files
+autocmd Filetype yaml setlocal ts=2 sw=2
+
