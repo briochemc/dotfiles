@@ -125,6 +125,7 @@ Plug 'maverickg/stan'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'crusoexia/vim-monokai'
 call plug#end()
 
 " Enable indent guides by default (nathanaelkane/vim-indent-guides)
