@@ -108,3 +108,8 @@ fi
 if [ -d /Applications/Julia-0.6.app/ ]; then
   alias julia0.6="/Applications/Julia-0.6.app/Contents/Resources/julia/bin/julia"
 fi
+
+# sagemath aliases for Mac
+if [ -d /Applications/SageMath-8.4.app/ ]; then
+  alias sage="/Applications/SageMath-8.4.app/sage"
+fi
