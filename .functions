@@ -55,7 +55,7 @@ function cpfromgp3() # Copy from greenplanet (via gplogin3)
 }
 function cpfromimac() # Copy to iMac
 {
-  scp UCIben@128.200.14.107:$1 $2
+  scp UCIben@128.200.14.103:$1 $2
 }
 function cp2ucihpc() # Copy to UCI HPC
 {
