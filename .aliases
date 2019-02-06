@@ -98,9 +98,12 @@ alias matlabcl='matlab -nodesktop -nosplash'
 alias top='top -o cpu -n 10'
 
 # julia aliases for Mac
+if [ -d /Applications/Julia-1.1.app/ ]; then
+  alias julia1.1="/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia"
+  alias julia="/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia"
+fi
 if [ -d /Applications/Julia-1.0.app/ ]; then
   alias julia1.0="/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia"
-  alias julia="/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia"
 fi
 if [ -d /Applications/Julia-0.7.app/ ]; then
   alias julia0.7="/Applications/Julia-0.7.app/Contents/Resources/julia/bin/julia"
