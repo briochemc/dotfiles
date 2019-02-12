@@ -50,7 +50,7 @@ if type _git &> /dev/null && [ -f /etc/bash_completion.d/git ]; then
 fi;
 
 # Additions for UCI campus-wide HPC use of modules:
-if [ ${HOSTNAME:0:9} = "hpc-login" ]; then
+if [ ${HOSTNAME:0:4} = "hpc-" ]; then
   source /data/shell-syswide-setup/system-wide-bashrc
 fi;
 
