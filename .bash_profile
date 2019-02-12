@@ -53,6 +53,9 @@ fi;
 if [ ${HOSTNAME:0:4} = "hpc-" ]; then
   source /data/shell-syswide-setup/system-wide-bashrc
 fi;
+if [ ${HOSTNAME:0:8} = "compute-" ]; then
+  source /data/shell-syswide-setup/system-wide-bashrc
+fi;
 
 # Source global definitions for greenplanet
 if [ ${HOSTNAME:0:7} = "gplogin" ]; then
