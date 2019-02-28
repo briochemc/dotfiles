@@ -83,6 +83,7 @@ alias katana='ssh z3319805@katana.science.unsw.edu.au'
 alias katanav='ssh -XY z3319805@katana.science.unsw.edu.au'
 alias katanav2='ssh -X z3319805@katana.science.unsw.edu.au'
 alias imac='ssh UCIben@128.200.14.103'
+alias imacv='ssh -Y UCIben@128.200.14.103'
 alias gp1='ssh pasquieb@gplogin1.ps.uci.edu'
 alias gp2='ssh pasquieb@gplogin2.ps.uci.edu'
 alias gp3='ssh pasquieb@gplogin3.ps.uci.edu'
@@ -98,6 +99,9 @@ alias matlabcl='matlab -nodesktop -nosplash'
 alias top='top -o cpu -n 10'
 
 # julia aliases for Mac
+if [ -d /Applications/Julia-1.2.app/ ]; then
+  alias julia1.2="/Applications/Julia-1.2.app/Contents/Resources/julia/bin/julia"
+fi
 if [ -d /Applications/Julia-1.1.app/ ]; then
   alias julia1.1="/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia"
   alias julia="/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia"
