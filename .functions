@@ -31,7 +31,7 @@ function cp2gp3() # Copy to greenplanet (via gplogin3)
 }
 function cp2imac() # Copy to iMac
 {
-  scp -r $1 UCIben@128.200.14.103:/Users/UCIben/$2
+  scp -r $1 UCIben@128.200.14.71:/Users/UCIben/$2
 }
 function cpfromkatana() # Copy from katana using kdm (katana data manager)
 {
@@ -55,7 +55,7 @@ function cpfromgp3() # Copy from greenplanet (via gplogin3)
 }
 function cpfromimac() # Copy to iMac
 {
-  scp UCIben@128.200.14.103:$1 $2
+  scp UCIben@128.200.14.71:$1 $2
 }
 function cp2ucihpc() # Copy to UCI HPC
 {
