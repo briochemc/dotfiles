@@ -120,3 +120,8 @@ fi
 if [ -d /Applications/SageMath-8.4.app/ ]; then
   alias sage="/Applications/SageMath-8.4.app/sage"
 fi
+
+# gvim alias
+if [ -d /Applications/MacVim.app/ ]; then
+  alias gvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
+fi
