@@ -44,8 +44,6 @@ set exrc
 set secure
 " Enable line numbers
 set number
-" Enable syntax highlighting
-syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as four spaces and replace with spaces
@@ -134,6 +132,8 @@ set ts=4 sw=4 et
 " vimtex setup for skim according to https://github.com/lervag/vimtex/issues/523
 " (Removed lines that were redundant)
 filetype plugin indent on
+" Enable syntax highlighting
+syntax on
 
 " vim-markdown-preview github-flavor
 let vim_markdown_preview_github=1
