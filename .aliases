@@ -17,6 +17,7 @@ if [ ${HOSTNAME:0:7} = "gplogin" ]; then
 else
   alias cdproj="cd ~/Projects"
 fi
+alias cddev="cd ~/.julia/dev/"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
