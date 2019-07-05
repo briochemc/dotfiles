@@ -11,7 +11,7 @@ fi;
 # scp functions
 function cp2katana() # Copy to katana using kdm (katana data manager)
 {
-  scp -r $1 z3319805@kdm.science.unsw.edu.au:/home/z3319805/$2
+  scp -r $1 z3319805@kdm.restech.unsw.edu.au:/home/z3319805/$2
 }
 function cp2gp1() # Copy to greenplanet (via gplogin1)
 {
@@ -35,7 +35,7 @@ function cp2imac() # Copy to iMac
 }
 function cpfromkatana() # Copy from katana using kdm (katana data manager)
 {
-  scp -r z3319805@kdm.science.unsw.edu.au:/home/z3319805/$1 $2
+  scp -r z3319805@kdm.restech.unsw.edu.au:/home/z3319805/$1 $2
 }
 function cpSampleNotesfromGreenPlanet() # Copy sampleNOTES from Moore's greenplanet
 {
