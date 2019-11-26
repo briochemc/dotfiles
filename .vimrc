@@ -103,6 +103,8 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+	" Treat .m files as Matlab
+	autocmd BufNewFile,BufRead *.m setlocal filetype=matlab
 endif
 
 " map ; to : to avoid pressing shift when, e.g., saving file
@@ -123,6 +125,7 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'crusoexia/vim-monokai'
+Plug 'yinflying/matlab.vim'
 call plug#end()
 
 " Enable indent guides by default (nathanaelkane/vim-indent-guides)
