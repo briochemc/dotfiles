@@ -53,6 +53,28 @@ function cpfromgp3() # Copy from greenplanet (via gplogin3)
 {
   scp pasquieb@gplogin3.ps.uci.edu:$1 $2
 }
+
+
+# Normalize `open` across Linux, macOS, and Windows.
+# This is needed to make the `o` function (see below) cross-platform.
+if [ ! $(uname -s) = 'Darwin' ]; then
+	if grep -q Microsoft /proc/version; then
+		# Ubuntu on Windows using the Linux subsystem
+		alias open='explorer.exe';
+	else
+		alias open='xdg-open';
+	fi
+fi
+
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+function o() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+
 function cpfromimac() # Copy to iMac
 {
   scp UCIben@128.200.14.71:$1 $2
