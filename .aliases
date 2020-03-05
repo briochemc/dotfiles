@@ -153,3 +153,7 @@ fi
 if [ -d /Applications/MacVim.app/ ]; then
   alias gvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
 fi
+
+# tree to display unicode characters
+alias tree="command tree -N"
+
