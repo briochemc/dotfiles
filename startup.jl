@@ -1,4 +1,5 @@
 # OhMyREPL (from Scott Thomas via slack)
+ENV["GKS_ENCODING"] = "utf-8"
 try
     @eval using OhMyREPL
 catch err
