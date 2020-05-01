@@ -1,6 +1,5 @@
-# Adds my student version of MATLAB in the path
-# for it to open when I simply type "matlab" in command line
-export PATH="/Applications/MATLAB_R2017b.app/bin:$PATH"
+# Add MATLAB in the path
+export PATH="/Applications/MATLAB_R2020a.app/bin:$PATH"
 
 # Add anaconda to the path
 export PATH="/usr/local/anaconda3/bin:$PATH"
