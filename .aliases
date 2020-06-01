@@ -107,7 +107,7 @@ alias gp1v='ssh -X pasquieb@gplogin1.ps.uci.edu'
 alias gp2v='ssh -X pasquieb@gplogin2.ps.uci.edu'
 alias gp3v='ssh -X pasquieb@gplogin3.ps.uci.edu'
 alias ucihpc='ssh pasquieb@hpc.oit.uci.edu'
-alias uschpc='ssh pasquier@geosys.usc.edu'
+alias uschpc='ssh -t pasquier@geosys.usc.edu screen -R'
 
 # quick matlab launch aliases
 alias matlabcl='matlab -nodesktop -nosplash'
