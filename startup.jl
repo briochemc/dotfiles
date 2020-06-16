@@ -1,9 +1,19 @@
 ENV["GKS_ENCODING"] = "utf-8"
 
-for M in (:OhMyREPL, :Revise, :ClearStacktrace)
-    try
-        @eval using $M
-    catch err
-        @warn "$M could not be started" err
-    end
+try
+    using Revise
+catch e
+    @warn(e.msg)
+end
+
+try
+    using OhMyREPL
+catch e
+    @warn(e.msg)
+end
+
+try
+    using ClearStacktrace
+catch e
+    @warn(e.msg)
 end
