@@ -53,6 +53,14 @@ function cpfromgp3() # Copy from greenplanet (via gplogin3)
 {
   scp pasquieb@gplogin3.ps.uci.edu:$1 $2
 }
+function cptousc() # Copy from greenplanet (via gplogin3)
+{
+  scp -r $1 pasquier@geosys.usc.edu:$2
+}
+function cpfromusc() # Copy from greenplanet (via gplogin3)
+{
+  scp -r pasquier@geosys.usc.edu:$1 $2
+}
 
 
 # Normalize `open` across Linux, macOS, and Windows.
