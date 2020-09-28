@@ -66,5 +66,5 @@ if [ ${HOSTNAME:0:7} = "gplogin" ]; then
   fi;
 fi;
 
-
+export MPLBACKEND=qt5agg
 

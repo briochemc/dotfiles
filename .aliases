@@ -131,6 +131,13 @@ if [ -d /Applications/Julia-1.0.app/ ]; then
 fi
 
 # julia aliases for USC cluster
+if [ -d ~/Applications/julia-1.5.2/ ]; then
+  alias julia1.5="~/Applications/julia-1.5.2/bin/julia"
+elif [ -d ~/Applications/julia-1.5.1/ ]; then
+  alias julia1.5="~/Applications/julia-1.5.1/bin/julia"
+elif [ -d ~/Applications/julia-1.5.0/ ]; then
+  alias julia1.5="~/Applications/julia-1.5.0/bin/julia"
+fi
 if [ -d ~/Applications/julia-1.4.2/ ]; then
   alias julia1.4="~/Applications/julia-1.4.2/bin/julia"
 elif [ -d ~/Applications/julia-1.4.1/ ]; then
