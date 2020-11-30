@@ -160,6 +160,7 @@ fi
 # gvim alias
 if [ -d /Applications/MacVim.app/ ]; then
   alias gvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
+  alias gvimdiff="gvim -diff"
 fi
 
 # tree to display unicode characters
