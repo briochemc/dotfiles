@@ -117,6 +117,9 @@ alias top='top -o cpu -n 10'
 
 alias julia="julia1.5"
 # julia aliases for Mac
+if [ -d /Applications/Julia-1.6.app/ ]; then
+  alias julia1.6="/Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia"
+fi
 if [ -d /Applications/Julia-1.5.app/ ]; then
   alias julia1.5="/Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia"
 fi
