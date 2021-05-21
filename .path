@@ -1,5 +1,5 @@
 # Add MATLAB in the path
-export PATH="/Applications/MATLAB_R2020a.app/bin:$PATH"
+export PATH="/Applications/MATLAB_R2021a.app/bin:$PATH"
 
 # Add anaconda to the path
 export PATH="/usr/local/anaconda3/bin:$PATH"
