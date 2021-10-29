@@ -61,6 +61,14 @@ function cpfromusc() # Copy from USC
 {
   scp -r pasquier@geosys.usc.edu:$1 $2
 }
+function cptogadi() # Copy from gadi
+{
+  scp -r $1 bp3051@gadi.nci.org.au:$2
+}
+function cpfromgadi() # Copy from gadi
+{
+  scp -r bp3051@gadi.nci.org.au:$1 $2
+}
 
 
 # Normalize `open` across Linux, macOS, and Windows.
