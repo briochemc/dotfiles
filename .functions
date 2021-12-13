@@ -69,7 +69,14 @@ function cpfromgadi() # Copy from gadi
 {
   scp -r bp3051@gadi.nci.org.au:$1 $2
 }
-
+function rsynctogadi()
+{
+  rsync -avPS $1 bp3051@gadi.nci.org.au:$2
+}
+function rsyncfromgadi()
+{
+  rsync -avPS bp3051@gadi.nci.org.au:$1 $2
+}
 
 # Normalize `open` across Linux, macOS, and Windows.
 # This is needed to make the `o` function (see below) cross-platform.
