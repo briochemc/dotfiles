@@ -12,3 +12,6 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 # For tree in ~/bin/bin on greenplanet
 export PATH=$PATH:~/bin/bin
+
+# For LaTeX 2021
+export PATH="/usr/local/texlive/2021/bin/universal-darwin:$PATH"
