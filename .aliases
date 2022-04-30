@@ -6,11 +6,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Shortcuts
-alias cdgoogle="cd ~/Google\ Drive"
-alias cdmatlab="cd ~/Documents/PhD/myPHD/MATLAB/"
-alias cdlatex="cd ~/Documents/PhD/myPHD/LATEX/"
-
 alias g="git"
 
 if [ ${HOSTNAME:0:7} = "gplogin" ]; then
