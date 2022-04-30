@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$PATH";
 
 # Add MATLAB in the path
-export PATH="/Applications/MATLAB_R2021b.app/bin:$PATH"
+export PATH="/Applications/MATLAB_R2022a.app/bin:$PATH"
 
 # Add anaconda to the path
 export PATH="/usr/local/anaconda3/bin:$PATH"
