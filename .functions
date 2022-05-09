@@ -63,19 +63,19 @@ function cpfromusc() # Copy from USC
 }
 function cptogadi() # Copy from gadi
 {
-  scp -r $1 bp3051@gadi.nci.org.au:$2
+  scp -r $1 bp3051@gadi-dm.nci.org.au:$2
 }
 function cpfromgadi() # Copy from gadi
 {
-  scp -r bp3051@gadi.nci.org.au:$1 $2
+  scp -r bp3051@gadi-dm.nci.org.au:$1 $2
 }
 function rsynctogadi()
 {
-  rsync -avPS $1 bp3051@gadi.nci.org.au:$2
+  rsync -avPS $1 bp3051@gadi-dm.nci.org.au:$2
 }
 function rsyncfromgadi()
 {
-  rsync -avPS bp3051@gadi.nci.org.au:$1 $2
+  rsync -avPS bp3051@gadi-dm.nci.org.au:$1 $2
 }
 
 # Normalize `open` across Linux, macOS, and Windows.
