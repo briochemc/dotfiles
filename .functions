@@ -107,3 +107,13 @@ function cp2ucihpc() # Copy to UCI HPC
 {
   scp -r $1 pasquieb@hpc.oit.uci.edu:/data/users/pasquieb/$2
 }
+
+# Pretty CSV tables
+# from https://www.stefaanlippens.net/pretty-csv.html
+function pretty_csv {
+  column -t -s, -n "$@" | less -F -S -X -K
+}
+function pretty_csv {
+  perl -pe 's/((?<=,)|(?<=^)),/ ,/g;' "$@" | column -t -s, | less  -F -S -X -K
+}
+
