@@ -109,6 +109,7 @@ alias gadiv='ssh -X bp3051@gadi.nci.org.au'
 # quick matlab launch aliases
 alias matlabcl='matlab -nodesktop -nosplash'
 alias matlab2022a='/Applications/MATLAB_R2022a.app/bin/matlab -nodesktop -nosplash'
+alias matlab2022b='/Applications/MATLAB_R2022b.app/bin/matlab -nodesktop -nosplash'
 alias matlab2020b='/Applications/MATLAB_R2020b.app/bin/matlab -nodesktop -nosplash'
 
 # top to see 10 most CPU intensive processes
