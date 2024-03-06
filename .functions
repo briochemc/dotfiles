@@ -13,53 +13,9 @@ function cp2katana() # Copy to katana using kdm (katana data manager)
 {
   scp -r $1 z3319805@kdm.restech.unsw.edu.au:/home/z3319805/$2
 }
-function cp2gp1() # Copy to greenplanet (via gplogin1)
-{
-  scp -r $1 pasquieb@gplogin1.ps.uci.edu:$2
-}
-function cp2gp2() # Copy to greenplanet (via gplogin2)
-{
-  scp -r $1 pasquieb@gplogin2.ps.uci.edu:$2
-}
-function cp2gp2_cesmruns() # Copy to greenplanet cesm_runs (via gplogin2)
-{
-  scp -r $1 pasquieb@gplogin2.ps.uci.edu:/DFS-L/SCRATCH/moore/pasquieb/cesm_runs/$2
-}
-function cp2gp3() # Copy to greenplanet (via gplogin3)
-{
-  scp -r $1 pasquieb@gplogin3.ps.uci.edu:$2
-}
-function cp2imac() # Copy to iMac
-{
-  scp -r $1 UCIben@128.200.14.71:/Users/UCIben/$2
-}
 function cpfromkatana() # Copy from katana using kdm (katana data manager)
 {
   scp -r z3319805@kdm.restech.unsw.edu.au:/home/z3319805/$1 $2
-}
-function cpSampleNotesfromGreenPlanet() # Copy sampleNOTES from Moore's greenplanet
-{
-  scp 'pasquieb@gplogin1.ps.uci.edu:/gdata/mooreprimeau/CESM_CODE/CESM1.97/sampleNOTES/*' $1
-}
-function cpfromgp1() # Copy from greenplanet (via gplogin3)
-{
-  scp pasquieb@gplogin1.ps.uci.edu:$1 $2
-}
-function cpfromgp2() # Copy from greenplanet (via gplogin3)
-{
-  scp pasquieb@gplogin2.ps.uci.edu:$1 $2
-}
-function cpfromgp3() # Copy from greenplanet (via gplogin3)
-{
-  scp pasquieb@gplogin3.ps.uci.edu:$1 $2
-}
-function cptousc() # Copy from USC
-{
-  scp -r $1 pasquier@geosys.usc.edu:$2
-}
-function cpfromusc() # Copy from USC
-{
-  scp -r pasquier@geosys.usc.edu:$1 $2
 }
 function cptogadi() # Copy from gadi
 {
@@ -97,15 +53,6 @@ function o() {
 	else
 		open "$@";
 	fi;
-}
-
-function cpfromimac() # Copy to iMac
-{
-  scp UCIben@128.200.14.71:$1 $2
-}
-function cp2ucihpc() # Copy to UCI HPC
-{
-  scp -r $1 pasquieb@hpc.oit.uci.edu:/data/users/pasquieb/$2
 }
 
 # Pretty CSV tables
