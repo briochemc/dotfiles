@@ -73,6 +73,7 @@ alias gadiv='ssh -X bp3051@gadi.nci.org.au'
 
 # quick matlab launch aliases
 alias matlabcl='matlab -nodesktop -nosplash'
+alias matlab2024a='/Applications/MATLAB_R2024a.app/bin/matlab -nodesktop -nosplash'
 alias matlab2023b='/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop -nosplash'
 alias matlab2023a='/Applications/MATLAB_R2023a.app/bin/matlab -nodesktop -nosplash'
 alias matlab2022b='/Applications/MATLAB_R2022b.app/bin/matlab -nodesktop -nosplash'

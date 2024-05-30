@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$PATH";
 
 # Add MATLAB in the path
-export PATH="/Applications/MATLAB_R2023a.app/bin:$PATH"
+export PATH="/Applications/MATLAB_R2024a.app/bin:$PATH"
 
 # Add anaconda to the path
 export PATH="/usr/local/anaconda3/bin:$PATH"
@@ -14,4 +14,4 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export PATH=$PATH:~/bin/bin
 
 # For texlive
-export PATH="/usr/local/texlive/2023/bin/universal-darwin:$PATH"
+export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
