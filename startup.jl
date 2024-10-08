@@ -1,5 +1,5 @@
 ENV["GKS_ENCODING"] = "utf-8"
-
+using Pkg: Pkg
 atreplinit() do repl
     try
         @eval using OhMyREPL
