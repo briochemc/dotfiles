@@ -14,9 +14,4 @@ catch e
     @warn "Error initializing Revise" exception=(e, catch_backtrace())
 end
 
-try
-    using AbbreviatedStackTraces
-catch e
-    @warn e.msg
-end
 
