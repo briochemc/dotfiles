@@ -69,7 +69,7 @@ alias katana='ssh z3319805@katana.restech.unsw.edu.au'
 alias katanav='ssh -XY z3319805@katana.restech.unsw.edu.au'
 alias katanav2='ssh -X z3319805@katana.restech.unsw.edu.au'
 alias gadi='ssh bp3051@gadi.nci.org.au'
-alias gadiv='ssh -X bp3051@gadi.nci.org.au'
+alias gadiv='ssh -Y bp3051@gadi.nci.org.au'
 
 # quick matlab launch aliases
 alias matlabcl='matlab -nodesktop -nosplash'
