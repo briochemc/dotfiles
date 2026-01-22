@@ -4,9 +4,6 @@ export PATH="$HOME/bin:$PATH";
 # Add MATLAB in the path
 export PATH="/Applications/MATLAB_R2024a.app/bin:$PATH"
 
-# Add anaconda to the path
-export PATH="/usr/local/anaconda3/bin:$PATH"
-
 # For a2x, needed for git-latexdiff?
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
@@ -15,3 +12,6 @@ export PATH=$PATH:~/bin/bin
 
 # For texlive
 export PATH="/usr/local/texlive/2025/bin/universal-darwin:$PATH"
+
+# For Homebrew curl to override macOS curl
+export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
