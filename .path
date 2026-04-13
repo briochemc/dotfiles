@@ -11,7 +11,7 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export PATH=$PATH:~/bin/bin
 
 # For texlive
-export PATH="/usr/local/texlive/2025/bin/universal-darwin:$PATH"
+export PATH="/usr/local/texlive/2026/bin/universal-darwin:$PATH"
 
 # For Homebrew curl to override macOS curl
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
